@@ -17,7 +17,7 @@ const classes = [
 
 export function Contact() {
   return (
-    <div className="mt-16 flex min-h-screen w-full flex-col items-center justify-start gap-12 md:gap-8">
+    <div className="mt-16 flex h-fit w-full flex-col items-center justify-start gap-12 md:mt-32 md:gap-32">
       <div className="w-full text-center">
         <p className="mx-auto max-w-[500px] font-bold text-lg text-muted-foreground md:text-2xl">
           Serviço de manutenção, automação, monitoramento e serviços elétricos

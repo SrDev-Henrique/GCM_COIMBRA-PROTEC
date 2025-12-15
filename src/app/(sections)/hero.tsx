@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <div className="flex min-h-screen w-full flex-col items-start gap-12 pt-28 md:items-center">
+    <div className="flex h-fit items-center justify-center">
+      <div className="flex h-fit w-full flex-col items-start gap-12 pt-28 md:items-center">
         <Badge variant="outline">
           <div className="flex items-center gap-2">
             <RiAwardFill className="size-10" />
