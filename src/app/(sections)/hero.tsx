@@ -6,6 +6,7 @@ import { RiAwardFill, RiPhoneFill, RiStarFill } from "@remixicon/react";
 import { Avatar } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
@@ -41,7 +42,10 @@ export function Hero() {
                   {Array.from({ length: 5 }).map((_, index) => (
                     <Avatar
                       key={index}
-                      className="-ms-3 size-8 border-3 border-background"
+                      className={cn(
+                        "size-8 border-3 border-background",
+                        index !== 0 && "-ms-3",
+                      )}
                     >
                       <AvatarImage src={faker.image.personPortrait()} />
                     </Avatar>

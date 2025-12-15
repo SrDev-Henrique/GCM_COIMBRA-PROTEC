@@ -12,7 +12,7 @@ import { whyUs } from "./data";
 
 export function WhyUs() {
   return (
-    <div className="mt-16 flex min-h-screen w-full flex-col items-center justify-start gap-12 md:gap-8">
+    <div className="mt-16 flex h-fit w-full flex-col items-center justify-start gap-12 md:gap-8">
       <div className="relative flex w-full items-start justify-between">
         <div className="flex w-fit flex-col">
           <p className="text-muted-foreground text-sm">Por que escolher</p>
