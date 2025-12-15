@@ -1,6 +1,7 @@
 import { Contact } from "./(sections)/contact/contact";
 import { Hero } from "./(sections)/hero";
 import { Services } from "./(sections)/services/services";
+import { WhyUs } from "./(sections)/why-us/why-us";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Contact />
+      <WhyUs />
     </main>
   );
 }

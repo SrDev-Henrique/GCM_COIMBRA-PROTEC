@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <div className="flex min-h-screen w-full flex-col items-start gap-12 pt-28 md:items-center">
-        <Badge variant="outline" className="shadow-lg">
+        <Badge variant="outline">
           <div className="flex items-center gap-2">
             <RiAwardFill className="size-10" />
             <div className="flex max-w-72 flex-col text-wrap">
