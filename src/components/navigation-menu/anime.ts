@@ -1,6 +1,6 @@
 export const navVariants = {
   initial: {
-    width: "min(65vw, 365px)",
+    width: "min(83vw, 365px)",
     height: "min(50vh, 58px)",
     borderRadius: "20px",
     transition: {
@@ -11,7 +11,7 @@ export const navVariants = {
     },
   },
   animate: {
-    width: "min(80vw, 650px)",
+    width: "min(90vw, 650px)",
     height: "min(80vh, 540px)",
     borderRadius: "30px",
     transition: {

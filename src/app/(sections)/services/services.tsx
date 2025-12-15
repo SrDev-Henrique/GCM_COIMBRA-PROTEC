@@ -14,9 +14,11 @@ export function Services() {
       <div className="flex w-full items-start justify-between">
         <div className="flex w-fit flex-col">
           <p className="text-muted-foreground text-sm">Conheça os</p>
-          <h2 className="font-bold uppercase md:text-2xl">Nossos Serviços</h2>
+          <h2 className="font-bold text-sm uppercase sm:text-base md:text-2xl">
+            Nossos Serviços
+          </h2>
         </div>
-        <div className="w-fit max-w-56 md:max-w-96">
+        <div className="w-fit max-w-48 sm:max-w-56 md:max-w-96">
           <p className="text-muted-foreground text-xs md:text-sm">
             Oferecemos uma ampla gama de serviços para atender às suas
             necessidades.
