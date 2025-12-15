@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 export function Hero() {
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <div className="flex min-h-screen w-full max-w-7xl flex-col items-start gap-12 pt-28 md:items-center">
+      <div className="flex min-h-screen w-full flex-col items-start gap-12 pt-28 md:items-center">
         <Badge variant="outline" className="shadow-lg">
           <div className="flex items-center gap-2">
             <RiAwardFill className="size-10" />
