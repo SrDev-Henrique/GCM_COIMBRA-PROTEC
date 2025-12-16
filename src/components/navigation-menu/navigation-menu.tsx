@@ -45,7 +45,7 @@ export function NavigationMenu() {
       animate={isOpen ? "animate" : "initial"}
       ref={containerRef}
       className={cn(
-        "-translate-x-1/2 fixed top-2 left-1/2 z-50 flex w-[385px] items-start justify-center bg-accent-foreground p-3 shadow-lg backdrop-blur-md backdrop-brightness-75",
+        "-translate-x-1/2 fixed bottom-2 left-1/2 z-50 flex w-[385px] items-end justify-center bg-accent-foreground p-3 shadow-lg backdrop-blur-md backdrop-brightness-75",
         isMobile && "w-[360px]",
       )}
     >

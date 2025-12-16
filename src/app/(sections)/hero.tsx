@@ -19,7 +19,7 @@ export function Hero() {
 
   return (
     <div className="flex h-fit items-center justify-center">
-      <div className="flex h-fit w-full flex-col items-start gap-12 pt-28 md:items-center">
+      <div className="flex h-fit w-full flex-col items-start gap-12 pt-20 md:items-center">
         <motion.div
           variants={fadeInVariants}
           initial="initial"
