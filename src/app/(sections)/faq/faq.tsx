@@ -1,10 +1,6 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion } from "@/components/ui/accordion";
 import { faqs } from "./data";
+import { FaqAccordionItem } from "./faq-accordion-item";
 
 export function Faq() {
   return (
@@ -25,15 +21,14 @@ export function Faq() {
         collapsible
         className="grid w-full grid-cols-1 gap-4 md:grid-cols-2"
       >
-        {faqs.map((item) => (
-          <AccordionItem key={item.id} value={item.id.toString()}>
-            <AccordionTrigger className="font-semibold hover:cursor-pointer hover:no-underline md:text-base lg:text-lg">
-              {item.question}
-            </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground text-sm lg:text-base">
-              {item.answer}
-            </AccordionContent>
-          </AccordionItem>
+        {faqs.map((item, index) => (
+          <FaqAccordionItem
+            key={item.id}
+            question={item.question}
+            answer={item.answer}
+            id={item.id}
+            index={index}
+          />
         ))}
       </Accordion>
     </div>

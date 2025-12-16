@@ -1,5 +1,12 @@
 export const navVariants = {
+  hidden: {
+    opacity: 0,
+    width: "min(83vw, 58px)",
+    height: "min(50vh, 58px)",
+    borderRadius: "20px",
+  },
   initial: {
+    opacity: 1,
     width: "min(83vw, 365px)",
     height: "min(50vh, 58px)",
     borderRadius: "20px",
@@ -11,6 +18,7 @@ export const navVariants = {
     },
   },
   animate: {
+    opacity: 1,
     width: "min(90vw, 650px)",
     height: "min(80vh, 540px)",
     borderRadius: "30px",

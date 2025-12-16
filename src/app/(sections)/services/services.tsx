@@ -1,12 +1,9 @@
+"use client";
+
 import { RiPhoneFill } from "@remixicon/react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { services } from "./data";
+import { ServicesCard } from "./services-card";
 
 export function Services() {
   return (
@@ -27,16 +24,14 @@ export function Services() {
       </div>
       <div className="flex w-full flex-col gap-8">
         <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((item) => (
-            <Card key={item.id} className="border-border/40 bg-background">
-              <CardHeader>
-                <CardTitle className="flex flex-col gap-2">
-                  <item.icon />
-                  <h2>{item.title}</h2>
-                </CardTitle>
-                <CardDescription>{item.description}</CardDescription>
-              </CardHeader>
-            </Card>
+          {services.map((item, index) => (
+            <ServicesCard
+              key={item.id}
+              title={item.title}
+              description={item.description}
+              Icon={item.icon as React.ElementType}
+              index={index}
+            />
           ))}
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-4">

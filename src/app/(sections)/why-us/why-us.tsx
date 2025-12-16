@@ -1,14 +1,6 @@
-import {
-  Item,
-  ItemContent,
-  ItemDescription,
-  ItemGroup,
-  ItemMedia,
-  ItemSeparator,
-  ItemTitle,
-} from "@/components/ui/item";
-import { cn } from "@/lib/utils";
+import { ItemGroup } from "@/components/ui/item";
 import { whyUs } from "./data";
+import { WhyUsItems } from "./why-us-items";
 
 export function WhyUs() {
   return (
@@ -27,22 +19,7 @@ export function WhyUs() {
       <div className="flex w-full flex-col">
         <ItemGroup className="w-full">
           {whyUs.map((item, index) => (
-            <div key={item.id}>
-              <Item
-                className={cn(index !== whyUs.length - 1 && "pb-6", "px-0")}
-              >
-                <ItemMedia className="text-3xl">{item.id}</ItemMedia>
-                <ItemContent className="flex flex-col justify-between gap-1 xl:flex-row">
-                  <ItemTitle className="font-bold text-3xl">
-                    {item.title}
-                  </ItemTitle>
-                  <ItemDescription className="w-full font-bold xl:max-w-[500px]">
-                    {item.description}
-                  </ItemDescription>
-                </ItemContent>
-              </Item>
-              {index !== whyUs.length - 1 && <ItemSeparator />}
-            </div>
+            <WhyUsItems key={item.id} item={item} index={index} />
           ))}
         </ItemGroup>
       </div>

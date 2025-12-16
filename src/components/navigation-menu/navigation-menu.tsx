@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { fadeInVariants } from "@/app/(sections)/anime";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
@@ -40,7 +41,7 @@ export function NavigationMenu() {
   return (
     <motion.div
       variants={navVariants}
-      initial="initial"
+      initial="hidden"
       animate={isOpen ? "animate" : "initial"}
       ref={containerRef}
       className={cn(
@@ -48,7 +49,13 @@ export function NavigationMenu() {
         isMobile && "w-[360px]",
       )}
     >
-      <div className="flex items-center gap-12">
+      <motion.div
+        variants={fadeInVariants}
+        initial="initial"
+        animate="animate"
+        custom={0.4}
+        className="flex items-center gap-12"
+      >
         <Link href="/">
           <div className="flex items-center gap-2">
             <Image
@@ -68,7 +75,7 @@ export function NavigationMenu() {
             <EllipsisIcon className="size-4" />
           </Button>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
