@@ -45,8 +45,9 @@ export function NavigationMenu() {
       animate={isOpen ? "animate" : "initial"}
       ref={containerRef}
       className={cn(
-        "-translate-x-1/2 fixed bottom-2 left-1/2 z-50 flex w-[385px] items-end justify-center bg-accent-foreground p-3 shadow-lg backdrop-blur-md backdrop-brightness-75",
+        "-translate-x-1/2 fixed bottom-2 left-1/2 z-50 flex w-[385px] items-start justify-center bg-card/40 p-3 shadow-lg backdrop-blur-md backdrop-brightness-98 transition-colors duration-300 md:items-end",
         isMobile && "top-2 w-[360px]",
+        isOpen && "bg-accent-foreground",
       )}
     >
       <motion.div
@@ -64,7 +65,12 @@ export function NavigationMenu() {
               width={isMobile ? 24 : 32}
               height={isMobile ? 24 : 32}
             />
-            <h2 className="text-nowrap font-bold text-background text-lg">
+            <h2
+              className={cn(
+                "text-nowrap font-bold text-accent-foreground text-lg transition-colors duration-300",
+                isOpen && "text-background",
+              )}
+            >
               COIMBRA PROTEC
             </h2>
           </div>

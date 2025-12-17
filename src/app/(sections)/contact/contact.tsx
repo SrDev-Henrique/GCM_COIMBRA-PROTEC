@@ -3,14 +3,7 @@
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 import { fadeInUpVariants } from "../anime";
-import { ContactCards } from "./contact-cards";
-import { contact } from "./data";
-
-const classes = [
-  "bg-chart-3 hover:bg-chart-3/80",
-  "bg-chart-4 hover:bg-chart-4/80",
-  "bg-chart-2 hover:bg-chart-2/80",
-];
+import { ContactCardsContainer } from "./contact-cards-container";
 
 export function Contact() {
   const introRef = useRef<HTMLDivElement>(null);
@@ -31,16 +24,7 @@ export function Contact() {
         </p>
       </motion.div>
       <div className="flex w-full flex-1 items-center justify-center">
-        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
-          {contact.map((item, index) => (
-            <ContactCards
-              key={item.id}
-              item={item}
-              classes={classes}
-              index={index}
-            />
-          ))}
-        </div>
+        <ContactCardsContainer />
       </div>
     </div>
   );
