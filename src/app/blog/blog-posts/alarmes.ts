@@ -6,6 +6,7 @@ const alarmesArticle = {
   image: "/images/alarmes.webp",
   tags: ["Alarmes", "Monitoramento"],
   estimatedTime: "7 minutos",
+  createdAt: "Ago 21, 2025",
   article: [
     {
       _type: "block",

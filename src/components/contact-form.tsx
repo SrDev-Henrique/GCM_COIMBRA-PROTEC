@@ -1,6 +1,8 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { RiAtLine, RiUserLine } from "@remixicon/react";
+import { PhoneIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { formatPhone, getPhoneDigits } from "@/lib/phone";
@@ -8,8 +10,6 @@ import { Button } from "./ui/button";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { RiAtLine, RiUserLine } from "@remixicon/react";
-import { PhoneIcon } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(1, { message: "Nome é obrigatório" }),
@@ -50,7 +50,7 @@ export function ContactForm() {
                   <Input
                     {...field}
                     placeholder="Nome"
-                    className="border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                    className="border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 dark:bg-transparent"
                   />
                 </div>
               </FormControl>
@@ -70,7 +70,7 @@ export function ContactForm() {
                     {...field}
                     placeholder="Email"
                     type="email"
-                    className="border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                    className="border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 dark:bg-transparent"
                   />
                 </div>
               </FormControl>
@@ -102,7 +102,7 @@ export function ContactForm() {
                         digits === "" ? undefined : Number(digits),
                       );
                     }}
-                    className="border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                    className="border-none shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 dark:bg-transparent"
                   />
                 </div>
               </FormControl>
@@ -119,7 +119,7 @@ export function ContactForm() {
                 <Textarea
                   {...field}
                   placeholder="Mensagem"
-                  className="bg-muted-foreground/3 shadow-sm"
+                  className="bg-muted-foreground/3 shadow-sm dark:bg-muted-foreground/3"
                 />
               </FormControl>
               <FormMessage />

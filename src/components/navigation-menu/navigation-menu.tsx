@@ -55,7 +55,7 @@ export function NavigationMenu() {
         initial="initial"
         animate="animate"
         custom={0.4}
-        className="flex items-center gap-12"
+        className="flex w-full max-w-lg items-center justify-between gap-12"
       >
         <Link href="/">
           <div className="flex items-center gap-2">

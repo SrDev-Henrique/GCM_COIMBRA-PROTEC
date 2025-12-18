@@ -6,6 +6,7 @@ const portoesEletricosArticle = {
   image: "/images/portoes-eletricos.webp",
   tags: ["Portões Elétricos", "Segurança", "Comodidade"],
   estimatedTime: "8 minutos",
+  createdAt: "Jun 18, 2025",
   article: [
     {
       _type: "block",

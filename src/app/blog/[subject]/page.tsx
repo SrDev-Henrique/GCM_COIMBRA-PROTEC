@@ -17,12 +17,14 @@ import { getArticleBySlug } from "./use-get-article";
 const PortableComponents: Partial<PortableTextReactComponents> = {
   block: {
     h2: ({ children }) => (
-      <h2 className="mt-8 mb-3 font-semibold text-2xl md:text-3xl">
+      <h2 className="mt-8 mb-3 font-semibold text-2xl text-card-foreground md:text-3xl">
         {children}
       </h2>
     ),
     h3: ({ children }) => (
-      <h3 className="mt-6 mb-2 font-semibold text-xl">{children}</h3>
+      <h3 className="mt-6 mb-2 font-semibold text-card-foreground text-xl">
+        {children}
+      </h3>
     ),
     normal: ({ children }) => (
       <p className="mb-4 text-base text-sidebar-foreground leading-relaxed">
@@ -80,18 +82,20 @@ export default async function BlogArticle({
   return (
     <div className="scrollbar-gutter-stable both-edges w-full px-4 py-28 md:px-10 md:py-20">
       <div className="mx-auto max-w-xl space-y-10 px-4 lg:max-w-2xl">
-        <Button
-          asChild
-          variant="ghost"
-          className="text-base text-primary hover:bg-transparent hover:text-primary/80"
-        >
-          <Link href="/blog">
-            <RiArrowLeftFill className="size-4" />
-            Voltar para o blog
-          </Link>
-        </Button>
+        <div className="flex w-full items-center justify-between gap-2">
+          <Button
+            asChild
+            variant="ghost"
+            className="text-base text-primary hover:bg-transparent hover:text-primary/80"
+          >
+            <Link href="/blog">
+              <RiArrowLeftFill className="size-4" />
+              Voltar para o blog
+            </Link>
+          </Button>
+        </div>
         <div className="space-y-4">
-          <div className="relative w-full overflow-hidden pe-4">
+          <div className="relative w-full overflow-hidden">
             <Image
               src={article.image}
               alt={article.title}
@@ -116,7 +120,9 @@ export default async function BlogArticle({
             ))}
           </div>
           <div className="flex flex-col gap-6">
-            <h1 className="font-bold text-3xl lg:text-4xl">{article.title}</h1>
+            <h1 className="font-bold text-3xl text-card-foreground lg:text-4xl">
+              {article.title}
+            </h1>
             <p className="text-base text-popover-foreground lg:text-lg">
               {article.description}
             </p>
@@ -127,9 +133,11 @@ export default async function BlogArticle({
                   <AvatarFallback>HA</AvatarFallback>
                 </Avatar>
                 <div className="flex flex-col">
-                  <p className="font-medium text-sm">Henrique Albuquerque</p>
+                  <p className="font-medium text-card-foreground text-sm">
+                    Henrique Albuquerque
+                  </p>
                   <p className="text-muted-foreground text-sm">
-                    @srdev-henrique
+                    {article.createdAt}
                   </p>
                 </div>
               </div>
