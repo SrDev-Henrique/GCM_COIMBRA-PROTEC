@@ -6,6 +6,7 @@ const cercasEletricasArticle = {
   tags: ["Cercas Elétricas", "Segurança", "Proteção"],
   estimatedTime: "5 minutos",
   createdAt: "Dez 17, 2025",
+  slug: "cercas-eletricas",
   article: [
     {
       _type: "block",

@@ -7,6 +7,7 @@ const portoesEletricosArticle = {
   tags: ["Portões Elétricos", "Segurança", "Comodidade"],
   estimatedTime: "8 minutos",
   createdAt: "Jun 18, 2025",
+  slug: "portoes-eletricos",
   article: [
     {
       _type: "block",

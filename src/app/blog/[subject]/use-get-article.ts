@@ -11,3 +11,12 @@ export async function getArticleBySlug(slug: string) {
   const module = await loader();
   return module.default;
 }
+
+export async function getArticles() {
+  return Promise.all(
+    Object.values(articleMap).map(async (loader) => {
+      const module = await loader();
+      return module.default;
+    }),
+  );
+}

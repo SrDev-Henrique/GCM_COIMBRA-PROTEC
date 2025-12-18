@@ -7,6 +7,7 @@ const alarmesArticle = {
   tags: ["Alarmes", "Monitoramento"],
   estimatedTime: "7 minutos",
   createdAt: "Ago 21, 2025",
+  slug: "alarmes",
   article: [
     {
       _type: "block",

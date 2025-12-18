@@ -11,7 +11,7 @@ const classes = [
 
 export function ContactCardsContainer() {
   return (
-    <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
+    <div className="grid w-full grid-cols-1 gap-4 lg:grid-cols-3">
       {contact.map((item, index) => (
         <ContactCards
           key={item.id}
