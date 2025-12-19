@@ -20,7 +20,7 @@ export function Contact() {
       >
         <p className="mx-auto max-w-[500px] font-bold text-lg text-muted-foreground md:text-2xl">
           Serviço de manutenção, automação, monitoramento e serviços elétricos
-          para campinas, valinhos, vinhedo e região.
+          para Campinas, Valinhos, Vinhedo e região.
         </p>
       </motion.div>
       <div className="flex w-full flex-1 items-center justify-center">
