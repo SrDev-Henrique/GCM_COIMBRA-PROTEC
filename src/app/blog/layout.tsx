@@ -7,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="relative min-h-screen w-screen bg-background px-4 py-28 md:px-10 md:py-20">
+    <div className="relative min-h-screen w-full bg-background">
       <NavigationMenu />
       {children}
       <Footer />

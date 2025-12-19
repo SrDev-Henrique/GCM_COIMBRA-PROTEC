@@ -5,7 +5,7 @@ const cercasEletricasArticle = {
   image: "/images/cercas-elétricas.webp",
   tags: ["Cercas Elétricas", "Segurança", "Proteção"],
   estimatedTime: "5 minutos",
-  createdAt: "Dez 17, 2025",
+  createdAt: "Jun 18, 2025",
   slug: "cercas-eletricas",
   article: [
     {

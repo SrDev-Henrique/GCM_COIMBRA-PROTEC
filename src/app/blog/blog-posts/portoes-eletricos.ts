@@ -6,7 +6,7 @@ const portoesEletricosArticle = {
   image: "/images/portoes-eletricos.webp",
   tags: ["Portões Elétricos", "Segurança", "Comodidade"],
   estimatedTime: "8 minutos",
-  createdAt: "Jun 18, 2025",
+  createdAt: "Dez 17, 2025",
   slug: "portoes-eletricos",
   article: [
     {
@@ -391,9 +391,7 @@ const portoesEletricosArticle = {
     {
       _type: "block",
       style: "normal",
-      children: [
-        { _type: "span", text: "— COIMBRA PROTEC" },
-      ],
+      children: [{ _type: "span", text: "— COIMBRA PROTEC" }],
       markDefs: [],
     },
   ],

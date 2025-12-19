@@ -1,9 +1,9 @@
 import { RiArrowRightFill, RiCalendar2Fill } from "@remixicon/react";
-import { Clock10Icon } from "lucide-react";
+import { BookOpenIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { TagsBadge } from "./tags-badge";
 
 export function BlogCard({
   image,
@@ -20,13 +20,6 @@ export function BlogCard({
   estimatedTime: string;
   slug: string;
 }) {
-  const colors = [
-    "0.6932 0.1974 38.9754",
-    "0.6898 0.1581 290.4107",
-    "0.7342 0.1295 134.837",
-    "0.7073 0.1847 25.9439",
-    "0.4539 0.0568 55.6365",
-  ];
   return (
     <div className="h-fit w-full">
       <div className="relative size-full overflow-hidden rounded-xl">
@@ -37,8 +30,8 @@ export function BlogCard({
           height={630}
           className="size-full object-cover object-center"
         />
-        <div className="absolute inset-0 flex items-end pt-10 md:p-6">
-          <div className="flex w-fit flex-col gap-2 px-4 py-2 backdrop-blur-sm backdrop-brightness-70 backdrop-contrast-125 backdrop-saturate-150">
+        <div className="absolute inset-0 flex items-end pt-10">
+          <div className="flex w-full flex-col gap-2 px-4 py-2 backdrop-blur-sm backdrop-brightness-70 backdrop-contrast-125 backdrop-saturate-150">
             <h3 className="line-clamp-2 font-bold text-lg text-primary-foreground md:text-xl">
               {title}
             </h3>
@@ -47,22 +40,14 @@ export function BlogCard({
                 <RiCalendar2Fill className="size-4" /> {createdAt}
               </p>
               <p className="flex items-center gap-2 text-xs">
-                <Clock10Icon className="size-4" /> {estimatedTime}
+                <BookOpenIcon className="size-4" /> {estimatedTime}
               </p>
             </div>
             <div className="flex w-fit items-center gap-2 rounded-full py-2 backdrop-blur-sm backdrop-brightness-30 backdrop-contrast-125 backdrop-saturate-150">
               {tags.map((tag, index) => (
-                <Badge
-                  key={tag}
-                  variant="outline"
-                  style={{
-                    backgroundColor: `oklch(${colors[index]}/0.2)`,
-                    color: `oklch(${colors[index]})`,
-                  }}
-                  className="border-none backdrop-brightness-40 sm:text-sm"
-                >
+                <TagsBadge key={tag} index={index}>
                   {tag}
-                </Badge>
+                </TagsBadge>
               ))}
             </div>
           </div>

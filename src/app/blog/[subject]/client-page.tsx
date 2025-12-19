@@ -12,13 +12,13 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { ContactCardsContainer } from "@/app/(sections)/contact/contact-cards-container";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { BlogCard } from "../components/blog-card";
 import { ContactCard } from "../components/contact-card";
+import { TagsBadge } from "../components/tags-badge";
 
-type Article = {
+export type Article = {
   slug: string;
   title: string;
   description: string;
@@ -38,14 +38,6 @@ type StructuredData = {
   url: string;
   datePublished: string;
 };
-
-const colors = [
-  "0.6932 0.1974 38.9754",
-  "0.6898 0.1581 290.4107",
-  "0.7342 0.1295 134.837",
-  "0.7073 0.1847 25.9439",
-  "0.4539 0.0568 55.6365",
-];
 
 const PortableComponents: Partial<PortableTextReactComponents> = {
   block: {
@@ -104,7 +96,7 @@ export function ClientPage({
   }, []);
 
   return (
-    <div className="scrollbar-gutter-stable both-edges w-full">
+    <div className="scrollbar-gutter-stable both-edges w-full px-4 py-28 md:px-10 md:py-20">
       <div className="mx-auto max-w-xl space-y-10 px-4 lg:max-w-2xl">
         <div className="flex w-full items-center justify-between gap-2">
           <Button
@@ -130,17 +122,9 @@ export function ClientPage({
           </div>
           <div className="flex items-center gap-2">
             {article.tags.map((tag, index) => (
-              <Badge
-                key={tag}
-                variant="outline"
-                style={{
-                  backgroundColor: `oklch(${colors[index]}/0.2)`,
-                  color: `oklch(${colors[index]})`,
-                }}
-                className="border-none text-sm"
-              >
+              <TagsBadge key={tag} index={index}>
                 {tag}
-              </Badge>
+              </TagsBadge>
             ))}
           </div>
           <div className="flex flex-col gap-6">
@@ -194,6 +178,16 @@ export function ClientPage({
         <ContactCardsContainer />
       </div>
       <div className="mx-auto mt-10 flex max-w-lg flex-col gap-5 px-4 lg:max-w-7xl">
+        <Button
+          asChild
+          variant="ghost"
+          className="self-start text-base text-primary hover:bg-transparent hover:text-primary/80"
+        >
+          <Link href="/blog">
+            <RiArrowLeftFill className="size-4" />
+            Voltar para o blog
+          </Link>
+        </Button>
         <div className="flex w-full items-center justify-between gap-4">
           <h2 className="font-bold text-2xl text-card-foreground">
             Mais artigos
