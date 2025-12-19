@@ -31,7 +31,7 @@ export function BlogCard({
           className="size-full object-cover object-center"
         />
         <div className="absolute inset-0 flex items-end pt-10">
-          <div className="flex w-full flex-col gap-2 px-4 py-2 backdrop-blur-sm backdrop-brightness-70 backdrop-contrast-125 backdrop-saturate-150">
+          <div className="flex w-full flex-col gap-2 px-4 py-2 backdrop-blur-sm backdrop-brightness-40 backdrop-contrast-125 backdrop-saturate-150">
             <h3 className="line-clamp-2 font-bold text-lg text-primary-foreground md:text-xl">
               {title}
             </h3>
