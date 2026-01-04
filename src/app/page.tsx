@@ -1,7 +1,6 @@
 import { Contact } from "./(sections)/contact/contact";
 import { Customers } from "./(sections)/customers/customers";
 import { Faq } from "./(sections)/faq/faq";
-import { Footer } from "./(sections)/footer/footer";
 import { Hero } from "./(sections)/hero";
 import { Services } from "./(sections)/services/services";
 import { WhyUs } from "./(sections)/why-us/why-us";
@@ -17,7 +16,6 @@ export default function Home() {
         <Customers />
         <Faq />
       </div>
-      <Footer />
     </main>
   );
 }

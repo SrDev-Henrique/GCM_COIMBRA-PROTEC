@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { navVariants } from "./anime";
 import { ContactLinks } from "./components/contact-links";
+import { NavigationOptions } from "./components/navigation-options";
 
 export function NavigationMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,17 +56,17 @@ export function NavigationMenu() {
       <div className="relative flex size-full items-start justify-center md:items-end">
         <div
           className={cn(
-            "scrollbar-hide pointer-events-none absolute inset-0 top-12 overflow-y-auto px-3 py-5 md:bottom-12",
-            isOpen && "pointer-events-auto",
+            "scrollbar-hide pointer-events-none absolute inset-0 top-12 overflow-y-auto px-3 py-5 opacity-0 transition-opacity duration-300 md:top-0 md:bottom-12",
+            isOpen && "pointer-events-auto opacity-100",
           )}
         >
           <div className="size-full h-fit min-h-[350px] space-y-4">
-            <div className="flex w-full xs:flex-row flex-col items-center justify-between gap-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {navigationContacts.map((item, index) => {
                 return <ContactLinks key={item.id} {...item} index={index} />;
               })}
             </div>
-            <div className="grid grid-cols-1 xs:grid-cols-2 gap-4"></div>
+            <NavigationOptions setIsOpen={setIsOpen} />
           </div>
         </div>
         <motion.div
@@ -74,7 +75,7 @@ export function NavigationMenu() {
           animate="animate"
           custom={0.4}
           className={cn(
-            "flex w-full max-w-lg items-center justify-between gap-12 transition-all duration-400",
+            "flex w-full items-center justify-between gap-12 transition-all duration-400",
             isOpen && "px-3",
           )}
         >

@@ -37,7 +37,7 @@ export function ContactLinks({
         "group w-full rounded-lg p-2 transition-colors duration-300",
       )}
     >
-      <div className="flex items-start justify-between gap-3">
+      <div className="flex items-start justify-between">
         <div className="flex items-start gap-2">
           <Icon className={cn(navigationContactIconStyles[index], "size-7")} />
           <div className="space-y-0.5">

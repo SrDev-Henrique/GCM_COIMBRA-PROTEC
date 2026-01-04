@@ -23,7 +23,7 @@ export const navVariants = {
   animate: {
     opacity: 1,
     width: "min(90vw, 560px)",
-    height: "min(80vh, 540px)",
+    height: "min(80vh, 440px)",
     borderRadius: "30px",
     paddingTop: "20px",
     transition: {
