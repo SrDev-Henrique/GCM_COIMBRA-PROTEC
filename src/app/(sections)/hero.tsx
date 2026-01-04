@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { fadeInVariants, fadeRightVariants } from "./anime";
+import Link from "next/link";
 
 export function Hero() {
   const headerRef = useRef<HTMLHeadingElement | null>(null);
@@ -118,11 +119,13 @@ export function Hero() {
               custom={0.8}
               className="w-fit"
             >
-              <Button size="lg">
-                <RiPhoneFill className="size-4" />
-                <p className="font-semibold text-sm uppercase">
-                  Entrar em contato
-                </p>
+              <Button size="lg" asChild>
+                <Link target="_blank" href="https://wa.me/5519992752708">
+                  <RiPhoneFill className="size-4" />
+                  <p className="font-semibold text-sm uppercase">
+                    Entrar em contato
+                  </p>
+                </Link>
               </Button>
             </motion.div>
           </div>

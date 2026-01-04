@@ -58,7 +58,10 @@ export function ContactCards({
             asChild
             className={`w-full font-bold ${classes[item.id - 1]}`}
           >
-            <Link href={item.link} target="_blank">
+            <Link
+              href={item.link}
+              target={item.link.includes("wa.me") ? "_blank" : "_self"}
+            >
               <item.icon /> {item.buttonText}
             </Link>
           </Button>

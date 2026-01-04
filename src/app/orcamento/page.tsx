@@ -1,8 +1,25 @@
 import { RiArrowLeftLine, RiMailFill, RiPhoneFill } from "@remixicon/react";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { OrcamentoForm } from "./components/orcamento-form";
+
+export const metadata: Metadata = {
+  title: "Solicitar orçamento | COIMBRA PROTEC",
+  description:
+    "Peça um orçamento para portões automáticos, cercas elétricas, alarmes e CFTV em Campinas, Valinhos e Vinhedo. Atendimento rápido e especializado.",
+  alternates: {
+    canonical: "/orcamento",
+  },
+  keywords: [
+    "orçamento portão automático",
+    "cercas elétricas orçamento",
+    "instalação alarmes",
+    "cftv orçamento",
+    "campinas segurança",
+  ],
+};
 
 export default function OrcamentoPage() {
   return (

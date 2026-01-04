@@ -1,6 +1,7 @@
 "use client";
 
 import { RiPhoneFill } from "@remixicon/react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { services } from "./data";
 import { ServicesCard } from "./services-card";
@@ -38,9 +39,13 @@ export function Services() {
           <p className="text-muted-foreground text-sm">
             Entre outros serviços.
           </p>
-          <Button size="lg">
-            <RiPhoneFill className="size-4" />
-            <p className="font-semibold text-sm uppercase">Entre em contato</p>
+          <Button size="lg" asChild>
+            <Link target="_blank" href="https://wa.me/5519992752708">
+              <RiPhoneFill className="size-4" />
+              <p className="font-semibold text-sm uppercase">
+                Entre em contato
+              </p>
+            </Link>
           </Button>
         </div>
       </div>

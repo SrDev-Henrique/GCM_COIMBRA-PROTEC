@@ -1,8 +1,25 @@
 import { RiArrowLeftLine, RiMailFill, RiPhoneFill } from "@remixicon/react";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AgendarVisitaForm } from "./components/agendar-visita-form";
+
+export const metadata: Metadata = {
+  title: "Agendar visita técnica | COIMBRA PROTEC",
+  description:
+    "Agende uma visita técnica para avaliação de portões automáticos, cercas elétricas, alarmes e CFTV em Campinas, Valinhos e Vinhedo. Equipe pronta para atender.",
+  alternates: {
+    canonical: "/agendar-visita",
+  },
+  keywords: [
+    "agendar visita técnica",
+    "visita portão automático",
+    "manutenção cercas elétricas",
+    "vistoria alarmes cftv",
+    "campinas segurança",
+  ],
+};
 
 export default function AgendarVisitaPage() {
   return (

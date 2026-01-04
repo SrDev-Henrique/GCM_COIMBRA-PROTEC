@@ -1,5 +1,4 @@
 import { NavigationMenu } from "@/components/navigation-menu/navigation-menu";
-import { Footer } from "../(sections)/footer/footer";
 
 export default function RootLayout({
   children,
@@ -10,7 +9,6 @@ export default function RootLayout({
     <div className="relative min-h-screen w-full bg-background">
       <NavigationMenu />
       {children}
-      <Footer />
     </div>
   );
 }
