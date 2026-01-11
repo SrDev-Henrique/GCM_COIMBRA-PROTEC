@@ -38,7 +38,7 @@ export function ServicesCard({
     >
       <Card className="size-full border-border/40 bg-background">
         <CardHeader>
-          <CardTitle className="flex flex-col gap-2">
+          <CardTitle className="flex flex-col gap-4">
             <Icon />
             <h2>{title}</h2>
           </CardTitle>
