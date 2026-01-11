@@ -1,41 +1,35 @@
 import { RiArrowLeftLine } from "@remixicon/react";
 import Link from "next/link";
-import { BuildingIcon } from "@/components/icons/building-icon";
 import { Button } from "@/components/ui/button";
-import {
-  Empty,
-  EmptyContent,
-  EmptyDescription,
-  EmptyHeader,
-  EmptyMedia,
-  EmptyTitle,
-} from "@/components/ui/empty";
+import { OpeningCard } from "./components/opening-card";
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen w-full flex-center pt-28 md:items-center md:pt-0">
-      <div className="mx-auto max-w-7xl space-y-4 px-[6vw] xl:px-12">
-        <h1 className="text-center font-bold text-2xl">Serviços</h1>
-        <Empty className="border">
-          <EmptyHeader>
-            <EmptyMedia>
-              <BuildingIcon />
-            </EmptyMedia>
-            <EmptyTitle>Em breve</EmptyTitle>
-            <EmptyDescription>
-              Em breve, você poderá conferir aqui todos os serviços que foram
-              concluídos.
-            </EmptyDescription>
-          </EmptyHeader>
-          <EmptyContent>
-            <Button asChild>
-              <Link href="/">
-                <RiArrowLeftLine />
-                Voltar para a página inicial
-              </Link>
-            </Button>
-          </EmptyContent>
-        </Empty>
+    <div className="min-h-screen w-full pt-28 md:items-center md:pt-12">
+      <div className="mx-auto max-w-5xl space-y-10 px-[6vw] xl:px-12">
+        <Button
+          asChild
+          variant="ghost"
+          className="text-base text-primary hover:bg-transparent hover:text-primary/80"
+        >
+          <Link href="/">
+            <RiArrowLeftLine />
+            Voltar para a página inicial
+          </Link>
+        </Button>
+        <div className="w-full space-y-6">
+          <OpeningCard />
+          <div className="space-y-4 text-sm sm:text-base md:text-lg">
+            <p className="text-foreground">
+              Colocamos em prática nossos serviços para garantir a melhor
+              qualidade de vida para você, mas não acredite apenas em nossas
+              palavras.
+            </p>
+            <p className="font-semibold">
+              Veja alguns dos nossos serviços realizados para clientes reais.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
