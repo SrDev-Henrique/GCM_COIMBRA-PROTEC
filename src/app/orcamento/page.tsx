@@ -25,9 +25,33 @@ export default function OrcamentoPage() {
   return (
     <div className="min-h-screen w-full pt-28 md:items-center md:pt-12">
       <div className="mx-auto max-w-3xl space-y-10 px-[6vw] xl:px-12">
-        <Button asChild>
+        <Button
+          asChild
+          variant="ghost"
+          className="text-base text-primary hover:bg-transparent hover:text-primary/80"
+        >
           <Link href="/">
-            <RiArrowLeftLine className="size-4" />
+            <RiArrowLeftLine />
+            Voltar para a página inicial
+          </Link>
+        </Button>
+        <Button
+          asChild
+          variant="ghost"
+          className="text-base text-primary hover:bg-transparent hover:text-primary/80"
+        >
+          <Link href="/">
+            <RiArrowLeftLine />
+            Voltar para a página inicial
+          </Link>
+        </Button>
+        <Button
+          asChild
+          variant="ghost"
+          className="text-base text-primary hover:bg-transparent hover:text-primary/80"
+        >
+          <Link href="/">
+            <RiArrowLeftLine />
             Voltar para a página inicial
           </Link>
         </Button>
