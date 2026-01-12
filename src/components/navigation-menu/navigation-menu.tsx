@@ -78,6 +78,10 @@ export function NavigationMenu() {
             "flex w-full items-center justify-between gap-12 transition-all duration-400",
             isOpen && "px-3",
           )}
+          onClick={() => {
+            if (!isOpen) return;
+            setIsOpen(false);
+          }}
         >
           <Link href="/">
             <div className="flex items-center gap-2">

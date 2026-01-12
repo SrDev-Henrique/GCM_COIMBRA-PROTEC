@@ -1,5 +1,4 @@
-import { RiArrowLeftLine } from "@remixicon/react";
-import { BuildingIcon } from "lucide-react";
+import { RiArrowLeftLine, RiFileSearchLine } from "@remixicon/react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +10,7 @@ import {
   EmptyTitle,
 } from "@/components/ui/empty";
 
-export function NotFound() {
+export function NotFound({ serviceName }: { serviceName: string }) {
   return (
     <div className="min-h-screen w-full flex-center pt-28 md:items-center md:pt-0">
       <div className="mx-auto max-w-7xl space-y-4 px-[6vw] xl:px-12">
@@ -19,12 +18,11 @@ export function NotFound() {
         <Empty className="border">
           <EmptyHeader>
             <EmptyMedia>
-              <BuildingIcon />
+              <RiFileSearchLine className="size-10 text-foreground/80" />
             </EmptyMedia>
-            <EmptyTitle>Em breve</EmptyTitle>
+            <EmptyTitle>Serviço não encontrado</EmptyTitle>
             <EmptyDescription>
-              Em breve, você poderá conferir aqui todos os serviços que foram
-              concluídos.
+              O serviço <span className="font-semibold">{serviceName}</span> não foi encontrado.
             </EmptyDescription>
           </EmptyHeader>
           <EmptyContent>
