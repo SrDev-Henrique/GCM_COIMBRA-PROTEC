@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "sonner";
+import { FixedContactButton } from "@/components/fixed-contact-button/fixed-contact-button";
 import { NavigationMenu } from "@/components/navigation-menu/navigation-menu";
 import { Footer } from "./(sections)/footer/footer";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Toaster position="top-center" />
+          <FixedContactButton />
         </div>
       </body>
     </html>

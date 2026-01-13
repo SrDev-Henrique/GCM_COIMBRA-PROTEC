@@ -9,6 +9,7 @@ type ContactLinksProps = {
   link: string;
   contact: string;
   index: number;
+  sm?: boolean;
 };
 
 export function ContactLinks({
@@ -17,6 +18,7 @@ export function ContactLinks({
   link,
   contact,
   index,
+  sm = false,
 }: ContactLinksProps) {
   const navigationContactContainerStyles = [
     "border border-chart-3/60 hover:border-chart-3/80",
@@ -44,7 +46,14 @@ export function ContactLinks({
             <p className="cursor-default font-medium text-muted text-sm">
               {label}
             </p>
-            <p className="text-muted-foreground text-xs">{contact}</p>
+            <p
+              className={cn(
+                "truncate text-muted-foreground text-xs",
+                sm && "max-w-[100px]",
+              )}
+            >
+              {contact}
+            </p>
           </div>
         </div>
         <Button
