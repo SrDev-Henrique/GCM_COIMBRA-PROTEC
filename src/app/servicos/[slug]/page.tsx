@@ -15,6 +15,10 @@ export default async function ServicePage({
     (service) => service.href === `/servicos/${subject.slug}`,
   );
 
+  const otherUseCases = clientServices.filter(
+    (service) => service.href !== `/servicos/${subject.slug}`,
+  );
+
   if (!useCase)
     return (
       <div>
@@ -30,7 +34,7 @@ export default async function ServicePage({
         </div>
       }
     >
-      <ClientPage {...useCase} />
+      <ClientPage subject={useCase} otherUseCases={otherUseCases} />
     </Suspense>
   );
 }

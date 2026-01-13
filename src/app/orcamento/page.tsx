@@ -35,26 +35,6 @@ export default function OrcamentoPage() {
             Voltar para a página inicial
           </Link>
         </Button>
-        <Button
-          asChild
-          variant="ghost"
-          className="text-base text-primary hover:bg-transparent hover:text-primary/80"
-        >
-          <Link href="/">
-            <RiArrowLeftLine />
-            Voltar para a página inicial
-          </Link>
-        </Button>
-        <Button
-          asChild
-          variant="ghost"
-          className="text-base text-primary hover:bg-transparent hover:text-primary/80"
-        >
-          <Link href="/">
-            <RiArrowLeftLine />
-            Voltar para a página inicial
-          </Link>
-        </Button>
         <div className="space-y-10">
           <h1 className="text-center font-bold text-2xl uppercase sm:text-left md:text-4xl">
             Solicitar orçamento

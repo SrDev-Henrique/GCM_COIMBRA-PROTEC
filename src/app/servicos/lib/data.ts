@@ -71,7 +71,7 @@ export const clientServices = [
       },
       conclusion: {
         paragraphs: [
-          "Entregamos o sistema plenamente funcional: o portão voltou a operar sem ruídos excessivos, com arrancada e parada suaves e sem perda de força. Explicamos à Mariana as intervenções realizadas, entregamos a nota técnica das peças trocadas, oferecemos garantia sobre o serviço e orientações de manutenção preventiva (pontos de lubrificação e periodicidade de revisão). A cliente relatou alívio por não precisar mais sair do carro para forçar o portão e destacou a confiança em poder contar conosco para futuras manutenções. Para a nossa equipe, foi um reparo que reforçou a importância de diagnóstico rápido e solução com peças e procedimentos adequados. ✅",
+          "Entregamos o sistema plenamente funcional: o portão voltou a operar sem ruídos excessivos, com arrancada e parada suaves e sem perda de força. Explicamos à Mariana as intervenções realizadas, entregamos a nota técnica das peças trocadas, oferecemos garantia sobre o serviço e orientações de manutenção preventiva (pontos de lubrificação e periodicidade de revisão). A cliente relatou alívio por não precisar mais sair do carro para forçar o portão e destacou a confiança em poder contar conosco para futuras manutenções. Para a nossa equipe, foi um reparo que reforçou a importância de diagnóstico rápido e solução com peças e procedimentos adequados.",
         ],
       },
     },
@@ -108,7 +108,7 @@ export const clientServices = [
       },
       conclusion: {
         paragraphs: [
-          "Ao final, entregamos um sistema com operação estável e acesso multiusuário: o Carlos e demais moradores passaram a entrar e sair sem sair do carro, com controles de reserva e possibilidade de bloqueio em caso de perda. Fornecemos um relatório com as configurações, garantias e recomendações de uso. O cliente relatou grande alívio pela praticidade recuperada e elogiou a rapidez da nossa resposta. Note técnico e garantia foram entregues — caso encerrado com sucesso. ✅",
+          "Ao final, entregamos um sistema com operação estável e acesso multiusuário: o Carlos e demais moradores passaram a entrar e sair sem sair do carro, com controles de reserva e possibilidade de bloqueio em caso de perda. Fornecemos um relatório com as configurações, garantias e recomendações de uso. O cliente relatou grande alívio pela praticidade recuperada e elogiou a rapidez da nossa resposta. Note técnico e garantia foram entregues — caso encerrado com sucesso.",
         ],
       },
     },
@@ -145,7 +145,7 @@ export const clientServices = [
       },
       conclusion: {
         paragraphs: [
-          "Entregamos o portão funcionando com movimento linear e sem vibrações; os travamentos desapareceram e a operação ficou mais silenciosa. Orientamos a Aline sobre os cuidados básicos (frequência de lubrificação, o que observar em uma revisão rápida) e deixamos um cronograma sugerido para revisões futuras. Ela pôde receber a família sem preocupações e nos relatou satisfação com a rapidez e a limpeza do serviço. Para nós, foi um trabalho de prevenção efetivo, que evitou um possível reparo emergencial. ✅",
+          "Entregamos o portão funcionando com movimento linear e sem vibrações; os travamentos desapareceram e a operação ficou mais silenciosa. Orientamos a Aline sobre os cuidados básicos (frequência de lubrificação, o que observar em uma revisão rápida) e deixamos um cronograma sugerido para revisões futuras. Ela pôde receber a família sem preocupações e nos relatou satisfação com a rapidez e a limpeza do serviço. Para nós, foi um trabalho de prevenção efetivo, que evitou um possível reparo emergencial.",
         ],
       },
     },
@@ -182,7 +182,7 @@ export const clientServices = [
       },
       conclusion: {
         paragraphs: [
-          "Ao finalizar, entregamos ao Rafael um portão automatizado que se moveu de forma suave e segura desde o primeiro acionamento. Ele passou a entrar com muito mais facilidade — especialmente quando vinha com crianças e compras — e ficou satisfeito com o reforço estrutural que eliminou rangidos e folgas. Fornecemos orientação prática sobre uso, manutenção preventiva e comportamento em caso de emergência (liberação manual). Registramos o serviço com nota técnica e garantia, e o Rafael comentou que ganhou tempo, conforto e mais segurança no dia a dia. ✅",
+          "Ao finalizar, entregamos ao Rafael um portão automatizado que se moveu de forma suave e segura desde o primeiro acionamento. Ele passou a entrar com muito mais facilidade — especialmente quando vinha com crianças e compras — e ficou satisfeito com o reforço estrutural que eliminou rangidos e folgas. Fornecemos orientação prática sobre uso, manutenção preventiva e comportamento em caso de emergência (liberação manual). Registramos o serviço com nota técnica e garantia, e o Rafael comentou que ganhou tempo, conforto e mais segurança no dia a dia.",
         ],
       },
     },
@@ -219,7 +219,7 @@ export const clientServices = [
       },
       conclusion: {
         paragraphs: [
-          "Entregamos o sistema funcionando de maneira confiável e protegida contra novos picos. Explicamos à Patrícia as medidas adotadas, entregamos a nota técnica com especificação do novo painel e orientações sobre como proceder em casos de queda de energia. Oferecemos um plano opcional de manutenção preventiva para checagem semestral. A cliente relatou alívio e comentou que agora se sente mais segura quanto à proteção elétrica da residência. ✅",
+          "Entregamos o sistema funcionando de maneira confiável e protegida contra novos picos. Explicamos à Patrícia as medidas adotadas, entregamos a nota técnica com especificação do novo painel e orientações sobre como proceder em casos de queda de energia. Oferecemos um plano opcional de manutenção preventiva para checagem semestral. A cliente relatou alívio e comentou que agora se sente mais segura quanto à proteção elétrica da residência.",
         ],
       },
     },
@@ -256,7 +256,7 @@ export const clientServices = [
       },
       conclusion: {
         paragraphs: [
-          "Ao finalizar, o sistema apresentou detecção confiável em todas as situações testadas: o portão interrompeu o fechamento sempre que um objeto foi detectado, e os ajustes reduziram alarmes falsos. Orientamos o Bruno sobre manutenção simples (limpeza das lentes e checagem anual) e deixamos um relatório das instalações. Ele nos relatou grande alívio ao ver as crianças brincando novamente sem risco próximo ao portão. Segurança entregue com eficiência. ✅",
+          "Ao finalizar, o sistema apresentou detecção confiável em todas as situações testadas: o portão interrompeu o fechamento sempre que um objeto foi detectado, e os ajustes reduziram alarmes falsos. Orientamos o Bruno sobre manutenção simples (limpeza das lentes e checagem anual) e deixamos um relatório das instalações. Ele nos relatou grande alívio ao ver as crianças brincando novamente sem risco próximo ao portão. Segurança entregue com eficiência.",
         ],
       },
     },
@@ -293,7 +293,7 @@ export const clientServices = [
       },
       conclusion: {
         paragraphs: [
-          "Ao entregar o serviço, a Clara passou a ter acesso garantido mesmo em situações críticas. Ela valorizou especialmente o treinamento prático que demos à família e a documentação com o passo a passo. Oferecemos ainda revisão gratuita de verificação do mecanismo após 30 dias para garantir que tudo permaneça em perfeito funcionamento. Resultado: mais segurança e tranquilidade para a cliente. ✅",
+          "Ao entregar o serviço, a Clara passou a ter acesso garantido mesmo em situações críticas. Ela valorizou especialmente o treinamento prático que demos à família e a documentação com o passo a passo. Oferecemos ainda revisão gratuita de verificação do mecanismo após 30 dias para garantir que tudo permaneça em perfeito funcionamento. Resultado: mais segurança e tranquilidade para a cliente.",
         ],
       },
     },
